@@ -1,0 +1,74 @@
+.fa-hand-point-down:before {
+    content: "\f0a7";
+}
+
+.featured-box-login {
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 4px;
+    background: var(--primary-bg);
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.social_connect,
+.social_connect a {
+    display: flex;
+    justify-content: center;
+}
+
+.social_connect {
+    text-align: center;
+    border-top: 1px dashed var(--theme1-bg);
+    margin-top: 10px;
+    padding-top: 5px;
+}
+
+.featured-box-login h4 {
+    color: var(--theme1-bg);
+}
+
+.slide-right {
+    animation: slide-right 2s cubic-bezier(.785, .135, .15, .86) infinite alternate both;
+}
+
+.handicon {
+    width: 30px !important;
+    position: absolute;
+    left: 30px;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.social_connect a {
+    text-decoration: none;
+    align-items: center;
+    margin: 0 3%;
+    color: #000;
+}
+
+.social_connect,
+.social_connect a {
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(0)
+    }
+
+    to {
+        transform: translateX(20px)
+    }
+}
