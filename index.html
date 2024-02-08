@@ -36,6 +36,21 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link id="cssFile" rel="stylesheet" href="default.css">
+    <script>
+        window.onload = function() {
+            var screenWidth = window.innerWidth;
+            var cssFile = document.getElementById('cssFile');
+
+            // Check screen size and set CSS file accordingly
+            if (screenWidth < 768) {
+                cssFile.href = "./m-style.css";
+            } else {
+                cssFile.href = "./style.css";
+
+            }
+        };
+    </script>
 
     <link rel="stylesheet" href="./newcss.css">
 </head>
@@ -59,7 +74,7 @@
                                             <div class="log-logo m-b-20 text-center"><img class="logo-login"
                                                     src="logo.png"></div>
                                             <div class="featured-box-login featured-box-secundary default">
-                                                <h4 class="text-center">LOGIN <i class="fas fa-hand-point-down"></i>
+                                                <h4 class="text-center nomobile">LOGIN <i class="fas fa-hand-point-down"></i>
                                                 </h4>
                                                 <form name="submit-to-google-sheet" id="loginForm"  autocomplete="off" class="ng-untouched ng-pristine ng-invalid">
                                                   <div class="form-group m-b-20">
